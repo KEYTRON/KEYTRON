@@ -16,6 +16,14 @@ My motto: "Dig deeper and never stop!" 😎
 
 ---
 
+## 🚀 Current Focus
+
+- Building smart automation and self-hosted setups
+- Experimenting with AI/ML pipelines and small creative tools
+- Tweaking Linux setups for speed, aesthetics, and clarity
+
+---
+
 ## 🎶 What else I like
 
 - Music (always in my life — techno, EDM, alternative)
@@ -115,6 +123,14 @@ dotfiles/
 - Фронт/дизайн: минимализм и мульти-темы (как в Garuda Linux/Kali Linux)
 - Инфраструктура: **Git**, **GitHub Actions**, **NixOS**
 - Последние интересы: **Квантовые компьютеры** и их потенциал 🤯
+
+---
+
+## 🚀 В фокусе сейчас
+
+- Умная автоматизация и self-hosted решения
+- Эксперименты с AI/ML-пайплайнами и мини-инструментами
+- Тюнинг Linux-среды для скорости, эстетики и ясности
 
 ---
 
