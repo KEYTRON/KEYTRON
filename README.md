@@ -54,9 +54,9 @@ dotfiles/
 
 ## 🏷️ Badges (CI/CD & Packages)
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/KEYTRON/KEYTRON/main.yml?label=CI&logo=github&style=flat-square)
-![Docker Pulls](https://img.shields.io/docker/pulls/keytron46/my-repo?style=flat-square&logo=docker)
-![Docker Image Size](https://img.shields.io/docker/image-size/keytron46/my-repo/latest?style=flat-square&logo=docker)
+![Repo size](https://img.shields.io/github/repo-size/KEYTRON/KEYTRON?label=Repo%20Size&logo=github&style=flat-square)
+![License](https://img.shields.io/github/license/KEYTRON/KEYTRON?label=License&style=flat-square)
+![Last commit](https://img.shields.io/github/last-commit/KEYTRON/KEYTRON?label=Last%20Commit&logo=github&style=flat-square)
 
 ---
 
@@ -145,9 +145,9 @@ dotfiles/
 
 ## 🏷️ Бейджи (CI/CD и пакеты)
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/KEYTRON/KEYTRON/main.yml?label=CI&logo=github&style=flat-square)
-![Docker Pulls](https://img.shields.io/docker/pulls/keytron46/my-repo?style=flat-square&logo=docker)
-![Docker Image Size](https://img.shields.io/docker/image-size/keytron46/my-repo/latest?style=flat-square&logo=docker)
+![Repo size](https://img.shields.io/github/repo-size/KEYTRON/KEYTRON?label=Repo%20Size&logo=github&style=flat-square)
+![License](https://img.shields.io/github/license/KEYTRON/KEYTRON?label=License&style=flat-square)
+![Last commit](https://img.shields.io/github/last-commit/KEYTRON/KEYTRON?label=Last%20Commit&logo=github&style=flat-square)
 
 ---
 
