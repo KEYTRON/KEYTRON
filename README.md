@@ -5,22 +5,47 @@ My motto: "Dig deeper and never stop!" 😎
 
 ---
 
+## 🚀 What I'm building
+
+My own OS stack, written from scratch and tested on my own CI lab:
+
+| Project | What it is | CI |
+|---|---|---|
+| **[K1K](https://github.com/KEYTRON/K1K)** | Hybrid capability-based kernel in Rust for x86_64: a small privileged core, while drivers and the file system run as isolated ring-3 services that a supervisor restarts when they crash | [![K1K CI](https://github.com/KEYTRON/K1K/actions/workflows/ci.yml/badge.svg)](https://github.com/KEYTRON/K1K/actions/workflows/ci.yml) |
+| **[K1OS](https://github.com/KEYTRON/K1OS)** | My own operating system — since generation 1 it boots on K1K | [![K1OS on K1K](https://github.com/KEYTRON/K1OS/actions/workflows/k1os-k1k.yml/badge.svg)](https://github.com/KEYTRON/K1OS/actions/workflows/k1os-k1k.yml) |
+| **[WARP](https://github.com/KEYTRON/WARP)** | Package manager in C for K1OS and other distros: a pinned Ed25519 key, signed index, delta updates, instant rollback | [![WARP Tests](https://github.com/KEYTRON/WARP/actions/workflows/warp-tests.yml/badge.svg)](https://github.com/KEYTRON/WARP/actions/workflows/warp-tests.yml) |
+
+Other projects:
+
+| Project | What it is | CI |
+|---|---|---|
+| **[ClamGuard](https://github.com/KEYTRON/ClamGuard)** | Android antivirus on the ClamAV engine (Cisco Talos): no-root scanning, quarantine, real-time protection, optional Magisk mode | [![ClamGuard Android](https://github.com/KEYTRON/ClamGuard/actions/workflows/android.yml/badge.svg?branch=main)](https://github.com/KEYTRON/ClamGuard/actions/workflows/android.yml) |
+| **[Allan](https://github.com/KEYTRON/Allan)** | Autonomous CLI agent in Go: TUI, ReAct loop with tools, SQLite + ChromaDB memory and a Skill Engine that reuses past solutions | — |
+| **[Specter](https://github.com/KEYTRON/Specter)** | Native VTuber app with real-time face, hand and body tracking (PyQt6 + MediaPipe) | — |
+| **[keytron-prime.org](https://keytron-prime.org)** | My website: blog, forum and project pages with roadmaps and live CI status (Django + React) | — |
+
+Roadmaps with progress for every project live on **[keytron-prime.org](https://keytron-prime.org)**.
+
+---
+
 ## 🧰 My Skills & Technologies
 
-- Languages: **Python**, **Bash**
-- Automation: **Docker**, **HomeAssistant**, **Fish Shell**
-- ML/AI: **TensorFlow**, **CoreML**, custom AI experiments (training & fine-tuning)
+- Languages: **C**, **Rust**, **Go**, **Python**, **Java** (Android), **TypeScript**, **Bash**
+- Systems: OS kernel development (x86_64, Limine, SMP, capabilities), **QEMU/KVM**, package management and signing
+- Web: **Django**, **React**, WebAuthn / passkeys
+- Infra: **Gentoo Linux** (OpenRC), **Docker**, self-hosted **GitHub Actions** runners, **Tailscale**, **nginx**
+- ML/AI: **TensorFlow**, **CoreML**, LLM agents, fine-tuning experiments
 - Frontend/Design: minimalist UI with dark/light themes (like Garuda Linux/Kali Linux)
-- Infra: **Git**, **GitHub Actions**, **NixOS**
 - Latest interests: **Quantum computing** and its potential 🤯
 
 ---
 
-## 🚀 Current Focus
+## 🎯 Current Focus
 
-- Building smart automation and self-hosted setups
-- Experimenting with AI/ML pipelines and small creative tools
-- Tweaking Linux setups for speed, aesthetics, and clarity
+- Growing K1K until K1OS runs fully on it: file protocol, services delivered by WARP, terminal, networking
+- Keeping everything tested on my own CI lab (self-hosted runners with KVM)
+- AI agents that do real work in the terminal
+- Self-hosted setups and smart automation
 
 ---
 
@@ -34,7 +59,9 @@ My motto: "Dig deeper and never stop!" 😎
 
 ## 📢 My profiles and community links
 
+- 🌐 Website: [keytron-prime.org](https://keytron-prime.org)
 - 🐦 X (Twitter): [@keytron46](https://x.com/keytron46)
+- 📣 Telegram channel: [@keytron_prime](https://t.me/keytron_prime)
 - 💬 Telegram (community & subscribers): [@KEYTRON_Prime_Community](https://t.me/KEYTRON_Prime_Community)
 - 📺 YouTube: [@keytron46](https://www.youtube.com/@keytron46)
 - 🎵 TikTok: [@zero4217](https://www.tiktok.com/@zero4217)
@@ -46,17 +73,6 @@ My motto: "Dig deeper and never stop!" 😎
 - 🐳 DockerHub: [docker.com/u/keytron46](https://hub.docker.com/repositories/keytron46)
 - 📫 Email (global): [keytron46@icloud.ru](mailto:keytron46@icloud.ru)
 - 📫 Email (Russia): [vip.kelt137@yandex.ru](mailto:vip.kelt137@yandex.ru)
-
----
-## 📂 Example config structure
-
-```
-dotfiles/
-├── fish/                # Fish Shell configs
-├── tmux/                # tmux configs
-├── vscode/              # VSCode settings
-└── README.md            # About these configs
-```
 
 ---
 
@@ -72,6 +88,8 @@ dotfiles/
 
 - **Fish Shell**, **tmux**, **direnv** — for comfortable terminal work
 - **Homebrew** — package manager on macOS
+- **QEMU / KVM** — booting and testing K1OS and K1K
+- **Claude Code, Codex** and other AI coding agents
 - **JupyterLab / Jupyter Notebook** — for research and ML/AI experiments
 - **VSCode** — my main editor
 - **Python**: pip, conda, pyenv — managing libraries and virtual environments
@@ -115,22 +133,47 @@ dotfiles/
 
 ---
 
+## 🚀 Что я делаю
+
+Собственный стек ОС — с нуля и с тестами на своей CI-лабе:
+
+| Проект | Что это | CI |
+|---|---|---|
+| **[K1K](https://github.com/KEYTRON/K1K)** | Гибридное capability-ядро на Rust для x86_64: маленькое привилегированное ядро, а драйверы и файловая система — изолированные сервисы в ring 3, которые супервизор перезапускает при падении | [![K1K CI](https://github.com/KEYTRON/K1K/actions/workflows/ci.yml/badge.svg)](https://github.com/KEYTRON/K1K/actions/workflows/ci.yml) |
+| **[K1OS](https://github.com/KEYTRON/K1OS)** | Моя операционная система — с первого поколения загружается на K1K | [![K1OS on K1K](https://github.com/KEYTRON/K1OS/actions/workflows/k1os-k1k.yml/badge.svg)](https://github.com/KEYTRON/K1OS/actions/workflows/k1os-k1k.yml) |
+| **[WARP](https://github.com/KEYTRON/WARP)** | Пакетный менеджер на C для K1OS и других дистрибутивов: закреплённый ключ Ed25519, подписанный индекс, дельта-обновления, мгновенный откат | [![WARP Tests](https://github.com/KEYTRON/WARP/actions/workflows/warp-tests.yml/badge.svg)](https://github.com/KEYTRON/WARP/actions/workflows/warp-tests.yml) |
+
+Другие проекты:
+
+| Проект | Что это | CI |
+|---|---|---|
+| **[ClamGuard](https://github.com/KEYTRON/ClamGuard)** | Антивирус для Android на движке ClamAV (Cisco Talos): сканирование без root, карантин, защита в реальном времени, режим с Magisk | [![ClamGuard Android](https://github.com/KEYTRON/ClamGuard/actions/workflows/android.yml/badge.svg?branch=main)](https://github.com/KEYTRON/ClamGuard/actions/workflows/android.yml) |
+| **[Allan](https://github.com/KEYTRON/Allan)** | Автономный CLI-агент на Go: TUI, цикл ReAct с инструментами, память на SQLite и ChromaDB и Skill Engine, который переиспользует прошлые решения | — |
+| **[Specter](https://github.com/KEYTRON/Specter)** | Нативное VTuber-приложение с трекингом лица, рук и тела в реальном времени (PyQt6 + MediaPipe) | — |
+| **[keytron-prime.org](https://keytron-prime.org)** | Мой сайт: блог, форум и страницы проектов с дорожными картами и статусом CI (Django + React) | — |
+
+Дорожные карты с прогрессом по каждому проекту — на **[keytron-prime.org](https://keytron-prime.org)**.
+
+---
+
 ## 🧰 Мои навыки и технологии
 
-- Языки: **Python**, **Bash**
-- Автоматизация: **Docker**, **HomeAssistant**, **Fish Shell**
-- ML/AI: **TensorFlow**, **CoreML**, эксперименты с нейросетями (дообучение и кастомизация)
+- Языки: **C**, **Rust**, **Go**, **Python**, **Java** (Android), **TypeScript**, **Bash**
+- Системное: разработка ядра ОС (x86_64, Limine, SMP, капабилити), **QEMU/KVM**, пакетный менеджмент и подписи
+- Веб: **Django**, **React**, WebAuthn / passkeys
+- Инфраструктура: **Gentoo Linux** (OpenRC), **Docker**, свои раннеры **GitHub Actions**, **Tailscale**, **nginx**
+- ML/AI: **TensorFlow**, **CoreML**, LLM-агенты, эксперименты с дообучением
 - Фронт/дизайн: минимализм и мульти-темы (как в Garuda Linux/Kali Linux)
-- Инфраструктура: **Git**, **GitHub Actions**, **NixOS**
 - Последние интересы: **Квантовые компьютеры** и их потенциал 🤯
 
 ---
 
-## 🚀 В фокусе сейчас
+## 🎯 В фокусе сейчас
 
-- Умная автоматизация и self-hosted решения
-- Эксперименты с AI/ML-пайплайнами и мини-инструментами
-- Тюнинг Linux-среды для скорости, эстетики и ясности
+- Развивать K1K, пока K1OS целиком не переедет на него: файловый протокол, сервисы через WARP, терминал, сеть
+- Держать всё под тестами на своей CI-лабе (self-hosted раннеры с KVM)
+- AI-агенты, которые реально работают в терминале
+- Self-hosted решения и умная автоматизация
 
 ---
 
@@ -144,8 +187,10 @@ dotfiles/
 
 ## 📢 Мои площадки и профили
 
+- 🌐 Сайт: [keytron-prime.org](https://keytron-prime.org)
 - 🐦 X (Twitter): [@keytron46](https://x.com/keytron46)
-- 💬 Telegram-канал (для сообщества и подписчиков): [@KEYTRON_Prime_Community](https://t.me/KEYTRON_Prime_Community)
+- 📣 Telegram-канал: [@keytron_prime](https://t.me/keytron_prime)
+- 💬 Telegram-группа (для сообщества и подписчиков): [@KEYTRON_Prime_Community](https://t.me/KEYTRON_Prime_Community)
 - 📺 YouTube: [@keytron46](https://www.youtube.com/@keytron46)
 - 🎵 TikTok: [@zero4217](https://www.tiktok.com/@zero4217)
 - 📘 Facebook: [mr.keytron](https://www.facebook.com/mr.keytron/)
@@ -171,6 +216,8 @@ dotfiles/
 
 - **Fish Shell**, **tmux**, **direnv** — для удобной работы в терминале
 - **Homebrew** — менеджер пакетов (macOS)
+- **QEMU / KVM** — загрузка и тесты K1OS и K1K
+- **Claude Code, Codex** и другие AI-агенты для кода
 - **JupyterLab / Jupyter Notebook** — для ML/AI-исследований
 - **VSCode** — универсальный редактор
 - **Python**: pip, conda, pyenv — управление библиотеками и виртуальными окружениями
